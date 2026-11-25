@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlightVN Apps</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182a20;
+      --muted: #4b6757;
+      --rule: #dbe8dc;
+      --brand: #215c3b;
+      --surface: #fcfdf9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at top, #dfeee2, #f4f7ef 60%);
+      color: var(--ink);
+      font: 1rem/1.65 system-ui, sans-serif;
+    }
+    .wrap {
+      width: min(46rem, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 3rem;
+    }
+    header { margin-bottom: 1.75rem; }
+    h1 {
+      margin: 0 0 .35rem;
+      color: var(--brand);
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -.03em;
+    }
+    .subtitle { margin: 0; color: var(--muted); }
+    .card {
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-radius: 1.25rem;
+      box-shadow: 0 .8rem 2.4rem rgb(33 92 59 / 7%);
+    }
+    .card h2 { margin: 0 0 .35rem; font-size: 1.25rem; color: var(--brand); }
+    .card p { margin: 0 0 .9rem; }
+    .links { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .links a {
+      display: inline-block;
+      padding: .35rem .85rem;
+      background: #edf4eb;
+      border: 1px solid var(--rule);
+      border-radius: .65rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--brand);
+    }
+    .links a:hover { text-decoration: underline; }
+    footer { margin-top: 2rem; color: var(--muted); font-size: .92rem; }
+    footer a { color: var(--brand); text-underline-offset: .18em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>AlightVN</h1>
+      <p class="subtitle">Android apps &amp; privacy documentation</p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Extra Calendar</h2>
+        <p>Local-first Android overtime diary with optional Google Drive backup and country holiday calendars.</p>
+        <div class="links">
+          <a href="./extra-calendar/privacy-policy/">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Contact: <a href="mailto:alightlegend@gmail.com">alightlegend@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
